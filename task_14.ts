@@ -1,3 +1,3 @@
-let a = 4
-let b = 3
-console.log(a=b)
+let k = 4
+let j = 3
+console.log(k=j)
