@@ -1,14 +1,10 @@
-let count = 42
-let userName = '42'
+let x: string = "я учу typescript!"
 
-let countStr1 = String(count)
-let userNameNum1 = Number(userName)
+let index = 88;
+if (x.charAt(index)) {
+    console.log(x.charAt(index))
+} else {
+    console.log("Вы вышли за границу строки")
+}
 
-console.log("countStr1: " + typeof countStr1)
-console.log("userNameNum1: " + typeof userNameNum1)
-
-let countStr2 = '' + count
-let userNameNum2 = +userName
-
-console.log("countStr2: " + typeof countStr2)
-console.log("userNameNum2: " + typeof userNameNum2)
+//console.log(index < x.length - 1 ? x.charAt(index) : "Вы вышли за границу строки")

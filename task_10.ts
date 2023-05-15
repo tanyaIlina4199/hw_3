@@ -1,8 +1,10 @@
-let key = true
-let documents = true
-let pen = true
-let apple = false
-let orange = true
+let random: number = getRandomFloat(1, 100);
 
-let shouldGoToWork = key && documents && pen && (apple || orange)
-console.log(shouldGoToWork)
+console.log(random)
+console.log(Math.floor(random))
+console.log(Math.ceil(random))
+console.log(Math.round(random))
+
+function getRandomFloat(min: number, max: number) {
+    return Math.random() * (max - min) + min;
+}

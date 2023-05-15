@@ -1,5 +1,2 @@
-for (let chislo = 1; chislo <= 20; chislo++) {
-if (chislo % 3 === 0) {
-console.log(chislo);
-    }
-}
+let aa: number = 6.0876876876
+console.log(Number.isInteger(aa) ? aa : Math.round(aa));

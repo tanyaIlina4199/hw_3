@@ -1,7 +1,3 @@
-let height = 15
-let width = 20
-if (height > width) {
-    console.log(height);
-} else {
-    console.log(width)
-} 
+let xx: number = 8.829734872948
+let yy: string = xx.toString().substring(0,5)
+console.log(Number.parseFloat(yy))

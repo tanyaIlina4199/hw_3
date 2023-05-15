@@ -1,9 +1,5 @@
-const MyAge = 11;
+let minInt: number = 1
+let maxInt: number = 100
+let randomInt: number = Math.floor(Math.random() * (maxInt - minInt) + minInt);
 
-if (16 <= MyAge && MyAge <= 18) {
-    console.log("Можешь выкурить сигаретку, только маме не говори");
-} else if (MyAge < 18) {
-    console.log("Попей колу");
-} else {
-    console.log("Попей пивка");
-}
+console.log(randomInt)

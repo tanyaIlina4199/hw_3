@@ -1,15 +1,11 @@
-let dostup = "доступ" 
-let morpeh = "морпех"
-let naled = "наледь"
-let poperek = "попрек"
-let rubilo = "рубило"
+let z: string = "я учу typescript!"
+console.log(z.slice(2, 5))
+console.log(z.slice(6, 16))
 
-console.log(dostup.length + morpeh.length + naled.length + poperek.length + rubilo.length)
+console.log(z.substring(2, 5))
+console.log(z.substring(6, 16))
 
-let all = dostup + morpeh + naled + poperek + rubilo
-let countLetters: number = 0;
-while (all[countLetters] != undefined) {
-    countLetters++
-}
 
-console.log(countLetters)
+console.log(z.slice(z.indexOf("у"), z.lastIndexOf("у") + 1))
+console.log(z.slice(z.indexOf("t"), z.lastIndexOf("t") + 1))
+

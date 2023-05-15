@@ -1,5 +1,9 @@
-let a = 1
-let b = 2
-let c = "белых медведей"
+let y: string = "я учу typescript"
 
-console.log(String(a) + String(b) + " " + c)
+if (y.endsWith(".")) {
+    console.log("Данное предложение закончено")
+} else {
+    console.log("В конце предложения не хватает точки")
+}
+
+//console.log(y.endsWith(".") ? "Данное предложение закончено" : "В конце предложения не хватает точки");
