@@ -1,11 +1,22 @@
-let z: string = "я учу typescript!"
-console.log(z.slice(2, 5))
-console.log(z.slice(6, 16))
+function getSumBetween(chisloFirst: number, chisloLast: number): number {
+    if (chisloFirst === chisloLast) {
+        return chisloFirst || chisloLast;
+    }
 
-console.log(z.substring(2, 5))
-console.log(z.substring(6, 16))
+    let first = chisloFirst;
+    let last = chisloLast;
+    if (chisloFirst > chisloLast) {
+        first = chisloLast;
+        last = chisloFirst;
+    }
 
-
-console.log(z.slice(z.indexOf("у"), z.lastIndexOf("у") + 1))
-console.log(z.slice(z.indexOf("t"), z.lastIndexOf("t") + 1))
-
+    let sum = 0;
+    while (first <= last) {
+      sum = sum + first;
+      first++;
+    }
+  
+    return sum;
+  }
+  
+  console.log(getSumBetween(2, 2));

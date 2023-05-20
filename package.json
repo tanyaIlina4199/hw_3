@@ -12,12 +12,7 @@
     "task6": "npx ts-node task_6.ts",
     "task7": "npx ts-node task_7.ts",
     "task8": "npx ts-node task_8.ts",
-    "task9": "npx ts-node task_9.ts",
-    "task10": "npx ts-node task_10.ts",
-    "task11": "npx ts-node task_11.ts",
-    "task12": "npx ts-node task_12.ts",
-    "task13": "npx ts-node task_13.ts",
-    "task14": "npx ts-node task_14.ts"
+    "task9": "npx ts-node task_9.ts"
   },
   "author": "",
   "license": "ISC"

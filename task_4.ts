@@ -1,9 +1,14 @@
-let y: string = "я учу typescript"
+function getSumNumbers(chislo: number): void {
+    let chisloStr = chislo.toString();
+    let x = 0;
+    let sumDigit = 0;
+    while (chisloStr[x]) {
+        let digit = Number.parseInt(chisloStr[x]);
+        sumDigit = sumDigit + digit;
+        x++;
+    }
 
-if (y.endsWith(".")) {
-    console.log("Данное предложение закончено")
-} else {
-    console.log("В конце предложения не хватает точки")
+    console.log(sumDigit);
 }
 
-//console.log(y.endsWith(".") ? "Данное предложение закончено" : "В конце предложения не хватает точки");
+getSumNumbers(1234)
