@@ -1,5 +1,13 @@
-function trimString(stroka: string, oot: number, doo: number): string {
-    return stroka.substring(oot, doo);
+const student = {
+    name: 'John',
+    age: 19,
+    isHappy: true
 }
 
-console.log(trimString("ЖелаюСчастьяЗдоровья", 2, 11))
+for (const studentKey in student) {
+    console.log(studentKey);
+}
+
+for (const studentKey in student) {
+    console.log(student[studentKey as keyof typeof student]);
+}

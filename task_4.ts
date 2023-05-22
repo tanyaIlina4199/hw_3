@@ -1,14 +1,10 @@
-function getSumNumbers(chislo: number): void {
-    let chisloStr = chislo.toString();
-    let x = 0;
-    let sumDigit = 0;
-    while (chisloStr[x]) {
-        let digit = Number.parseInt(chisloStr[x]);
-        sumDigit = sumDigit + digit;
-        x++;
-    }
+const colors = {
+    'ru pum pu ru rum': {
+        red: 'красный',
+        green: 'зеленый',
+        blue: 'синий'
+    },
+};
 
-    console.log(sumDigit);
-}
-
-getSumNumbers(1234)
+let rupu = colors["ru pum pu ru rum"];
+console.log(rupu.red + " и " + rupu.blue);

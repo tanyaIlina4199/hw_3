@@ -15,5 +15,11 @@
     "task9": "npx ts-node task_9.ts"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  },
+  "devDependencies": {
+    "@types/prompt-sync": "^4.2.0"
+  }
 }

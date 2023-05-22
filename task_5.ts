@@ -1,22 +1,17 @@
-function getSumBetween(chisloFirst: number, chisloLast: number): number {
-    if (chisloFirst === chisloLast) {
-        return chisloFirst || chisloLast;
-    }
+let salaries = {
+    andrey: 500,
+    sveta: 413,
+    anton: 987,
+    tamara: 664,
+    alexandra: 199,
+   // tanya: 555 
+}
 
-    let first = chisloFirst;
-    let last = chisloLast;
-    if (chisloFirst > chisloLast) {
-        first = chisloLast;
-        last = chisloFirst;
-    }
+let sumZP = 0;
+let count = 0; 
+for (const salariesKey in salaries) { //
+    count++;
+    sumZP = sumZP + salaries[salariesKey as keyof typeof salaries];
+}
 
-    let sum = 0;
-    while (first <= last) {
-      sum = sum + first;
-      first++;
-    }
-  
-    return sum;
-  }
-  
-  console.log(getSumBetween(2, 2));
+console.log(sumZP / count);

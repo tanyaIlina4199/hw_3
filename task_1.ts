@@ -1,12 +1,13 @@
-function getSum(chisloLast: number): void {
-  let sum = 0;
-  let j = 0;
-  while (j <= chisloLast) {
-    sum = sum + j;
-    j++;
-  }
-
-  console.log(sum);
+interface Husband {
+  name?: string,
+  age?: number
 }
 
-getSum(100);
+const myHusband: Husband = {
+  name: "Zhenya",
+  age: 70
+}
+console.log(myHusband)
+delete myHusband.age
+delete myHusband.name
+console.log(myHusband)
