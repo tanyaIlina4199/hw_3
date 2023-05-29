@@ -1,8 +1,6 @@
-const dog = {
-    name: "Bob",
-    age: 2,
-    weight: 15,
-    type: "Cocker"
-}
+const animals = ['monkey', 'dog', 'cat'];
 
-console.log("age" in dog);
+//console.log(animals.reverse()[0])
+
+const len = animals.length;
+console.log(animals[len - 1])

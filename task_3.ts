@@ -1,13 +1,5 @@
-const student = {
-    name: 'John',
-    age: 19,
-    isHappy: true
-}
+const numbers = [5, 43, 63, 23, 90]
 
-for (const studentKey in student) {
-    console.log(studentKey);
-}
-
-for (const studentKey in student) {
-    console.log(student[studentKey as keyof typeof student]);
-}
+const l = numbers.length;
+numbers.splice(0, l); // numbers.splice(0);
+console.log(numbers)

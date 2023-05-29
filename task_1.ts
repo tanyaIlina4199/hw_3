@@ -1,13 +1,3 @@
-interface Husband {
-  name?: string,
-  age?: number
-}
+const colors = ['red', 'green', 'blue']
 
-const myHusband: Husband = {
-  name: "Zhenya",
-  age: 70
-}
-console.log(myHusband)
-delete myHusband.age
-delete myHusband.name
-console.log(myHusband)
+console.log("Length of array is " + colors.length)

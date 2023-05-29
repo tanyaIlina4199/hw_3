@@ -1,17 +1,8 @@
-let salaries = {
-    andrey: 500,
-    sveta: 413,
-    anton: 987,
-    tamara: 664,
-    alexandra: 199,
-   // tanya: 555 
+const cats = ['Gachito', 'Tom', 'Batman']
+for (let i = 0; i < cats.length; i++){
+    console.log(cats[i]);
 }
 
-let sumZP = 0;
-let count = 0; 
-for (const salariesKey in salaries) { //
-    count++;
-    sumZP = sumZP + salaries[salariesKey as keyof typeof salaries];
+for (const cat of cats) {
+    console.log(cat);
 }
-
-console.log(sumZP / count);

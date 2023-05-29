@@ -1,10 +1,8 @@
-const colors = {
-    'ru pum pu ru rum': {
-        red: 'красный',
-        green: 'зеленый',
-        blue: 'синий'
-    },
-};
+const students = ['Polina', 'Dasha', 'Masha']
 
-let rupu = colors["ru pum pu ru rum"];
-console.log(rupu.red + " и " + rupu.blue);
+students.pop()
+students.push(`Borya`)
+students.shift()
+students.unshift(`Andrey`)
+
+console.log(students)
