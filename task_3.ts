@@ -1,5 +1,10 @@
-const numbers = [5, 43, 63, 23, 90]
+const numbers = [7, -4, 32, -90, 54, 32, -21]
+console.log("arrow")
+console.log(numbers.filter((value: number) => {
+    return value > 0
+}))
 
-const l = numbers.length;
-numbers.splice(0, l); // numbers.splice(0);
-console.log(numbers)
+console.log("\n functional")
+console.log(numbers.filter(function (value) {
+    return value > 0
+}))

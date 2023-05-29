@@ -1,8 +1,7 @@
-const students = ['Polina', 'Dasha', 'Masha']
+const fibo = [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987]
 
-students.pop()
-students.push(`Borya`)
-students.shift()
-students.unshift(`Andrey`)
+console.log(fibo.reduce((prevValue, curValue) => prevValue + curValue));
 
-console.log(students)
+console.log(fibo.reduce(function (prevValue, curValue) { 
+    return prevValue + curValue
+}));

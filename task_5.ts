@@ -1,8 +1,8 @@
-const cats = ['Gachito', 'Tom', 'Batman']
-for (let i = 0; i < cats.length; i++){
-    console.log(cats[i]);
-}
+const numbers1 = [5, 9, 13, 24, 54, 10, 13, 99, 1, 5]
+console.log(numbers1.find((value: number) => {
+    return value % 2 === 0
+}))
 
-for (const cat of cats) {
-    console.log(cat);
-}
+console.log(numbers1.find(function (value: number) {
+    return value %2 === 0
+}))

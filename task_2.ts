@@ -1,6 +1,10 @@
-const animals = ['monkey', 'dog', 'cat'];
+const users = ['Darya', 'Masha', 'Denis', 'Vitaliy', 'Polina', 'Anton']
+console.log("arrow")
+console.log(users.map((value: string, index: number) => {
+    return "member " + (index + 1) + `: ${value}`
+}))
 
-//console.log(animals.reverse()[0])
-
-const len = animals.length;
-console.log(animals[len - 1])
+console.log("\n functional")
+console.log(users.map(function (value, index) {
+    return "member " + (index + 1) + `: ${value}`;
+}))
