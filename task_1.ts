@@ -1,8 +1,16 @@
-const fibonacci = [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987]
-console.log("functional")
-fibonacci.forEach(function (value) {
-    console.log(value);
-})
+class Animal {
+    static animalType: string = 'dog';
 
-console.log("\n arrow")
-fibonacci.forEach((value) => console.log(value));
+    name: string;
+
+    constructor(name: string) {
+        this.name = name;
+    }
+
+    printAnimal() {
+        return `This is a ${Animal.animalType}. It's name is ${this.name}`
+    }
+}
+
+const dog = new Animal('Bob');
+console.log(dog.printAnimal())
